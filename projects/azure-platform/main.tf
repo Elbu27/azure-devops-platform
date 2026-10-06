@@ -3,7 +3,7 @@ locals {
   common_tags = merge({
     environment = var.environment
     managed_by  = "terraform"
-    project     = "azure-devops-portfolio"
+    project     = "azure-devops-platform"
     cost_center = "learning"
   }, var.tags)
 }

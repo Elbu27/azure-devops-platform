@@ -1,4 +1,4 @@
-# Azure DevOps Portfolio Projects
+# Azure DevOps Platform
 
 Three connected, junior-level cloud and DevOps projects that demonstrate the path from infrastructure provisioning to application delivery and production operations.
 

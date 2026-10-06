@@ -6,5 +6,5 @@ monthly_budget_amount = 25
 
 tags = {
   owner      = "your-name"
-  repository = "cloud-devops-portfolio"
+  repository = "azure-devops-platform"
 }

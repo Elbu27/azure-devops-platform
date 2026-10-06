@@ -29,7 +29,7 @@ variable "tags" {
   description = "Tags applied to monitoring resources."
   type        = map(string)
   default = {
-    project    = "azure-devops-portfolio"
+    project    = "azure-devops-platform"
     managed_by = "terraform"
   }
 }
