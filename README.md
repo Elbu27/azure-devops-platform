@@ -1,8 +1,12 @@
 # Azure DevOps Platform
 
-Three connected, junior-level cloud and DevOps projects that demonstrate the path from infrastructure provisioning to application delivery and production operations.
+I built this project to demonstrate an end-to-end cloud and DevOps workflow: provisioning Azure infrastructure, delivering a containerized application, and preparing the service for production operations.
 
-> This repository is designed as a learning portfolio. It is deployable, but Azure resources may incur charges. Review [cost controls](docs/COSTS.md) and always run `terraform destroy` after a lab.
+> I designed this as a deployable learning project. Azure resources may incur charges, so review [cost controls](docs/COSTS.md) and always run `terraform destroy` after a lab.
+
+## Author
+
+[Elbu27](https://github.com/Elbu27)
 
 ## What this demonstrates
 
@@ -67,8 +71,8 @@ No real credentials, subscription IDs, email addresses, or secrets belong in Git
 
 ## Recruiter summary
 
-This portfolio shows practical junior cloud/DevOps skills: converting requirements into tagged Azure resources, building a secure delivery pipeline, troubleshooting from logs and metrics, and documenting both normal operation and failure recovery. See [interview talking points](docs/INTERVIEW.md) for concise explanations and résumé bullets.
+Through this project, I demonstrate practical junior cloud/DevOps skills: converting requirements into tagged Azure resources, building a secure delivery pipeline, troubleshooting from logs and metrics, and documenting both normal operation and failure recovery. See my [interview talking points](docs/INTERVIEW.md) for concise explanations and résumé bullets.
 
 ## Status and limitations
 
-Local checks are automated. Live Azure deployment is not performed automatically because it requires the owner's subscription, budget approval, OIDC trust, and contact details. The repository documents those steps explicitly so they can be reproduced safely.
+I completed the automated local checks documented in [the verification record](docs/VERIFICATION.md). I have not yet run the live Azure deployment because it requires my subscription configuration, budget approval, OIDC trust, and alert contact details. I documented every deployment step so I can reproduce it safely.

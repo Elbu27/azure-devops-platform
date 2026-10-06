@@ -1,6 +1,6 @@
 # Project 2: Container API and CI/CD
 
-A small production-style Flask API packaged as a non-root container. It demonstrates testing, container hardening, health probes, image scanning, and deployment automation.
+I built this small production-style Flask API and packaged it as a non-root container. It demonstrates testing, container hardening, health probes, image scanning, and deployment automation.
 
 ## Run locally
 

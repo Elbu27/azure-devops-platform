@@ -1,6 +1,6 @@
 # Verification record
 
-Run these checks before presenting or publishing the portfolio:
+I used these commands to validate the project before publishing it:
 
 ```bash
 make lint
@@ -15,7 +15,7 @@ terraform -chdir=projects/observability validate
 docker build -t cloud-status-api:test projects/container-api
 ```
 
-## Local result
+## My local results
 
 - Python lint, format, four unit tests, and a live Gunicorn health smoke test: passed.
 - Both Terraform configurations: initialized and validated with pinned provider locks.
@@ -23,6 +23,6 @@ docker build -t cloud-status-api:test projects/container-api
 - Dependency audit: no known vulnerabilities after upgrading Flask to 3.1.3.
 - Secret scan: no findings outside ignored local tool caches.
 - Container build: Dockerfile is present and CI-ready; local execution requires the Docker daemon to be running.
-- Live Azure plan/apply and smoke test: intentionally pending owner subscription, cost approval, OIDC configuration, and deployment approval.
+- Live Azure plan/apply and smoke test: intentionally pending my subscription configuration, cost approval, OIDC setup, and deployment approval.
 
-A live deployment is not necessary to review the source, but deployment screenshots and measured results should be added after the owner completes the lab. Never claim Azure resources were deployed when they were not.
+After I complete the Azure deployment, I will add screenshots and measured results such as pipeline duration, recovery time, and lab cost. Until then, this record clearly separates what I validated locally from what remains to be tested in Azure.

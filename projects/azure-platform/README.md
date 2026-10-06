@@ -1,6 +1,6 @@
 # Project 1: Azure Platform with Terraform
 
-A reusable, low-cost Azure foundation demonstrating infrastructure as code, naming and tagging, network controls, managed identity, RBAC, centralized logs, Key Vault, Container Registry, and Azure Container Apps.
+I designed this reusable, low-cost Azure foundation to demonstrate infrastructure as code, naming and tagging, network controls, managed identity, RBAC, centralized logs, Key Vault, Container Registry, and Azure Container Apps.
 
 ## Architecture
 

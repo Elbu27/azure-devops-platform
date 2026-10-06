@@ -1,6 +1,6 @@
 # Project 3: Azure Observability and Incident Response
 
-An operations-focused project with KQL, alert-as-code, an Azure Workbook starter, SLOs, a runbook, and a blameless postmortem.
+I created this operations layer with KQL, alert-as-code, an Azure Workbook starter, SLOs, a runbook, and a blameless postmortem.
 
 ## Deploy alerts
 
