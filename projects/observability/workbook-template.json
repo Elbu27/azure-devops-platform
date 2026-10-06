@@ -1,0 +1,30 @@
+{
+  "version": "Notebook/1.0",
+  "items": [
+    {
+      "type": 1,
+      "content": {
+        "json": "# Cloud Status API \u2014 Operations\nErrors and log volume from Azure Container Apps."
+      },
+      "name": "title"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "ContainerAppConsoleLogs_CL | where TimeGenerated > ago(24h) | summarize Logs=count(), Errors=countif(Log_s has_any ('ERROR','Exception')) by bin(TimeGenerated, 5m)",
+        "size": 0,
+        "title": "Logs and errors",
+        "timeContext": {
+          "durationMs": 86400000
+        },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces"
+      },
+      "name": "error-chart"
+    }
+  ],
+  "fallbackResourceIds": [
+    "/subscriptions/REPLACE/resourceGroups/REPLACE/providers/Microsoft.OperationalInsights/workspaces/REPLACE"
+  ]
+}

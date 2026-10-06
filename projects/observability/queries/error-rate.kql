@@ -1,0 +1,7 @@
+// Error-like application logs grouped into five-minute windows.
+ContainerAppConsoleLogs_CL
+| where TimeGenerated > ago(24h)
+| extend IsError = Log_s has_any ("ERROR", "Exception", "status=500")
+| summarize Requests=count(), Errors=countif(IsError) by bin(TimeGenerated, 5m)
+| extend ErrorRatePercent = round(100.0 * todouble(Errors) / Requests, 2)
+| order by TimeGenerated asc

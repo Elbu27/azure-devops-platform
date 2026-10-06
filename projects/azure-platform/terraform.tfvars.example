@@ -1,0 +1,10 @@
+subscription_id      = "00000000-0000-0000-0000-000000000000"
+location             = "uksouth"
+environment          = "dev"
+project_name         = "cloudportfolio"
+monthly_budget_amount = 25
+
+tags = {
+  owner      = "your-name"
+  repository = "cloud-devops-portfolio"
+}

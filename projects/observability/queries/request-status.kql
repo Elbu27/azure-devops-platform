@@ -1,0 +1,7 @@
+// Parse the structured key=value request logs emitted by app.py.
+ContainerAppConsoleLogs_CL
+| where TimeGenerated > ago(1h)
+| where Log_s contains "request method="
+| parse Log_s with * "method=" Method:string " path=" Path:string " status=" Status:int
+| summarize Requests=count() by Status, Path, bin(TimeGenerated, 5m)
+| order by TimeGenerated asc

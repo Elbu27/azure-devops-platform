@@ -1,0 +1,6 @@
+// Compare log volume and errors by Container Apps revision.
+ContainerAppConsoleLogs_CL
+| where TimeGenerated > ago(24h)
+| summarize LogLines=count(), Errors=countif(Log_s has_any ("ERROR", "Exception"))
+    by RevisionName_s, bin(TimeGenerated, 15m)
+| order by TimeGenerated desc
